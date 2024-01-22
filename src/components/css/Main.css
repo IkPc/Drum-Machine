@@ -1,0 +1,104 @@
+#drum-machine {
+    align-items: center;
+    display: block;
+    width: 600px;
+    height: 350px;
+    background: repeating-radial-gradient(rgb(61, 187, 204), rgb(69, 122, 182));
+    box-shadow: 10px 10px 10px 0px rgb(29, 86, 94);
+    border-radius: 3px;
+    color: whitesmoke;
+}
+
+/*pads*/
+.padWrapper {
+    display: grid;
+    margin-top: 1%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 9px;
+    padding: 6vh 5% 6vh;
+    float: left;
+}
+
+.drum-pad {
+    height: 70px;
+    width: 85px;
+    opacity: 0.9;
+    border-radius: 7px;
+    box-shadow: 3px 4px 6px 0px #37460e;
+    cursor: pointer;
+    box-sizing: border-box;
+    background: repeating-radial-gradient(#86ac1e, #5c7516);
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.drum-pad:active {
+    background: repeating-radial-gradient(#5b7514,#33410d);
+    box-shadow: 3px 4px 6px 0px #1d2508;
+    transform: scale(0.95);
+}
+
+/*display*/
+.displayWrapper {
+    margin-top: 4%;
+    padding-block: 3.3%;
+    padding-inline: 10%;
+    float: right;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1vh;
+    text-shadow: 2px 2px 4px #363636;
+}
+
+#display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 2px 2px 3px 0px #363636;
+    height: 30px;
+    width: 140px;
+    border-radius: 2px;
+    background-color: rgb(103, 116, 116);
+  }
+
+/*mobile*/
+@media (max-width: 600px) {
+    #drum-machine {
+        width: 90vw;
+        height: 55vh;
+    }
+
+    .padWrapper {
+        float: none;
+        gap: 10px 0;
+        padding-bottom: 15px;
+    }
+
+    .drum-pad {
+        height: 65px;
+        width: 100px;
+    }
+
+    .displayWrapper {
+        padding-top: 0px;
+        justify-content: center;
+        align-items: center;
+        float: none; 
+        text-align: center;
+    }
+
+    h2 {
+        margin: 0 10 auto;
+        margin-bottom: 10px;
+    }
+
+    #display {
+        top: 10px;
+        margin: 0 auto;
+        width: 150px;
+    }
+}
