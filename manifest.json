@@ -1,0 +1,8 @@
+{
+  "short_name": "Drum Machine",
+  "name": "Drum machine",
+  "start_url": "https://ikpc.github.io/Drum-Machine/",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
