@@ -39,7 +39,8 @@
     transition: background-color 0.2s, transform 0.2s;
 }
 
-.drum-pad:active {
+.drum-pad:active,
+.drum-pad.active {
     background: repeating-radial-gradient(#5b7514,#33410d);
     box-shadow: 3px 4px 6px 0px #1d2508;
     transform: scale(0.95);
